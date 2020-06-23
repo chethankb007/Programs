@@ -5,12 +5,13 @@ import java.util.Scanner;
  * Find and print the triplets of elements in the array which sum to x.
  *	While printing a triplet, print the smallest element first.
  */
-public class TripletSum {
-
-	public static void FindTriplet(int[] arr, int num){
+public class TripletSum 
+{
+	public static void FindTriplet(int[] arr, int num)
+	{
 		
-        if(arr.length == 0)
-			return;
+       		 if(arr.length == 0)
+		 return;
 		
 		Arrays.sort(arr);
 		
@@ -18,17 +19,19 @@ public class TripletSum {
 		{
 			   for(int j = i + 1; j < arr.length; j++)
 			   {
-                  for(int k = j +1 ;k<arr.length;k++)
-                  {
-                       if(arr[i] + arr[j] + arr[k] == num){
-						System.out.println(arr[i] +  " " + arr[j] + " " + arr[k]);
-			      }
-                  }
+                  		for(int k = j +1 ;k<arr.length;k++)
+                  		{
+                      				 if(arr[i] + arr[j] + arr[k] == num)
+						 {
+							System.out.println(arr[i] +  " " + arr[j] + " " + arr[k]);
+			      			 }
+                  		}
 			     
 			   }
 		}
-	}
+	}//end of FindTriplet
 	static Scanner s = new Scanner(System.in);
+	
 	public static int[] takeInput() {
 		System.out.println("Enter size of the array");
 		int size = s.nextInt();
