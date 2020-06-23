@@ -41,7 +41,7 @@ public static void rotate(int[] arr , int d)
 	
 	int n =arr.length;
 	reverse(arr , 0 , d- 1);//reverse firt d elements
-	reverse(arr , d , n	 -1);//reverse elements after d
+	reverse(arr , d , n-1);//reverse elements after d
 	reverse(arr , 0 , n - 1);// reverse all elements
 		
 	}
