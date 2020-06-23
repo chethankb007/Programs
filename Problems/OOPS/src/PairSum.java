@@ -25,7 +25,8 @@ public class PairSum {
 			return;
 		int size = arr.length;
 		Arrays.sort(arr);
-		int i = 0 , j = size - 1;
+		int i = 0 ;
+		int j = size - 1;
 		int sum = 0;
 		
 		
